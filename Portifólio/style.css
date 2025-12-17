@@ -1,0 +1,92 @@
+/* Fonte estilo terminal para combinar com seu gosto, ou use uma moderna como Roboto/Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=VT323&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; /* Mais limpo para leitura profissional */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar e Logo */
+.navbar-brand {
+    font-family: 'VT323', monospace;
+    font-size: 1.8rem;
+}
+
+/* Imagem de Perfil */
+.profile-img {
+   width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #198754;
+    object-position: center 29%;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 90vh;
+    padding-top: 60px;
+}
+
+/* Cards de Habilidades */
+.skill-card {
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-bottom: 3px solid #198754 !important;
+}
+
+/* Cards de Projetos */
+.project-card {
+    transition: all 0.3s;
+}
+
+/* Alternativa: Se preferir ver a imagem inteira (bom para logotipos/ícones) */
+.project-card img {
+    height: 160px;
+    object-fit: contain; /* Mostra a imagem inteira, pode sobrar bordas laterais */
+    background-color: #2b3035; /* Cor de fundo para preencher o espaço vazio */
+    padding: 10px; /* Um respiro para a imagem não colar na borda */
+}
+
+.project-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.border-dashed {
+    border: 2px dashed #6c757d;
+    background: transparent;
+}
+
+/* Scrollbar Personalizada (estilo que você já tinha, adaptado) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb {
+    background: #198754;
+    border-radius: 5px;
+}
+
+/* Ajustes Específicos do Modo Escuro */
+[data-bs-theme="dark"] .bg-body-tertiary {
+    background-color: #2b3035 !important;
+}
+
+/* Opcional: Efeito Neon suave nos títulos */
+h2 span.text-success {
+    text-shadow: 0 0 10px rgba(25, 135, 84, 0.3);
+}
+/* Efeito de levitação no botão */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px); /* Sobe um pouquinho */
+    box-shadow: 0 10px 20px rgba(25, 135, 84, 0.4); /* Sombra verde */
+}
