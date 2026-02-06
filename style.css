@@ -1,4 +1,4 @@
-/* Fonte estilo terminal para combinar com seu gosto, ou use uma moderna como Roboto/Poppins */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=VT323&display=swap');
 
 body {
@@ -43,12 +43,12 @@ body {
     transition: all 0.3s;
 }
 
-/* Alternativa: Se preferir ver a imagem inteira (bom para logotipos/ícones) */
+
 .project-card img {
     height: 160px;
-    object-fit: contain; /* Mostra a imagem inteira, pode sobrar bordas laterais */
-    background-color: #2b3035; /* Cor de fundo para preencher o espaço vazio */
-    padding: 10px; /* Um respiro para a imagem não colar na borda */
+    object-fit: contain; 
+    background-color: #2b3035; 
+    padding: 10px; 
 }
 
 .project-card:hover {
@@ -60,7 +60,7 @@ body {
     background: transparent;
 }
 
-/* Scrollbar Personalizada (estilo que você já tinha, adaptado) */
+/* Scrollbar Personalizada */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -72,12 +72,12 @@ body {
     border-radius: 5px;
 }
 
-/* Ajustes Específicos do Modo Escuro */
+
 [data-bs-theme="dark"] .bg-body-tertiary {
     background-color: #2b3035 !important;
 }
 
-/* Opcional: Efeito Neon suave nos títulos */
+
 h2 span.text-success {
     text-shadow: 0 0 10px rgba(25, 135, 84, 0.3);
 }
@@ -87,6 +87,38 @@ h2 span.text-success {
 }
 
 .hover-lift:hover {
-    transform: translateY(-5px); /* Sobe um pouquinho */
+    transform: translateY(-5px); 
     box-shadow: 0 10px 20px rgba(25, 135, 84, 0.4); /* Sombra verde */
+}
+
+.project-card .display-4 {
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .display-4 {
+    color: #ffffff !important; 
+}
+
+
+.project-card:hover i {
+    color: #fff !important;
+    filter: drop-shadow(0 0 10px rgba(25, 135, 84, 0.8));
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* Ajuste para o preview do currículo */
+.cv-preview {
+    transition: transform 0.4s ease;
+    border: 1px solid rgba(25, 135, 84, 0.2);
+}
+
+.cv-preview:hover {
+    transform: scale(1.02);
+}
+
+.project-card .card-body > i {
+    display: block;
+    height: 80px;
+    line-height: 80px;
 }
