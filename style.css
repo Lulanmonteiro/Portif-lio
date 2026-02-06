@@ -122,3 +122,19 @@ h2 span.text-success {
     height: 80px;
     line-height: 80px;
 }
+
+/* Animação suave ao filtrar */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ajuste no grupo de botões para ficarem bonitos no tema dark */
+.btn-group .btn {
+    border-width: 2px;
+    font-weight: 600;
+}
